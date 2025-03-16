@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #1F7D53;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ecb16a;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #1F7D53;
+        box-shadow: 2px 2px 3px rgb(227, 224, 224);
+      }
+
+      .name {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #ecb16a;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 15px;
+      }
+
+      nav a:hover {
+        color: rgb(232, 228, 228);
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px;
+      }
+
+      .intro {
+        font-size: 20px;
+        color:white;
+        max-width: 600px;
+      }
+
+      .image img {
+        border: 3px solid  rgb(255, 255, 255);;
+        border-radius: 50%;
+      }
+
+      .education,
+      .skills,
+	  .language,
+      .Hobbies,
+      .contact
+	  {
+        padding: 20px;
+        margin: 20px;
+        background: #1e334c;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #F8ED8C;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 7px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th ,td{
+        background-color: #1F7D53;
+        color: white;
+        text-align: center;
+      }
+
+      ul li,
+      p {
+        color: whitesmoke;
+        font-size: 18px;
+        padding: 4px;
+      }
+
+      .contact a {
+        display: block;
+        color: rgb(232, 228, 228);
+
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px 0;
+      }
+
+      .contact a:hover {
+        color: #ecb16a;
+      }
+
+      @media (max-width: 768px) {
+        .nav-items {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        nav a {
+          margin: 5px 0;
+        }
+        section {
+          flex-direction: column;
+          align-items:centre
+          text-align: left;
+		  
+        }
+        .image img {
+          width: 150px;
+          height: 150px;
+        }
+        .intro {
+		
+          text-align:text;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-items">
+      <div class="name">Resume</div>
+      <nav>
+       
+        <a href="#education">Education</a>
+		 <a href="#skills">Skills</a>
+		 <a href="#language">Language</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+
+    <section>
+      <div class="intro">
+        <p>
+		<h3>Sonali Kumari</h3> <hr>
+          I am currently pursuing a B.Tech at Government Engineering College,
+          Vaishali, with a strong passion for technology and innovation. I am
+          actively learning web development and Highly motivated and skilled
+          Developer with a passion for problem-solving and a curiosity for
+          learning.
+        </p>
+      </div>
+      <div class="image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVebDI4OmhaAGINhR4jbLXQI-L96HuUyuZ9w&s"
+          alt="Profile Image"
+          width="250px"
+          height="250px"
+        />
+      </div>
+    </section>
+
+    <div class="education">
+      <h2 id="education">Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>B.Tech(CSE-IoT)</td>
+          <td>Govt. Engg. college ,Vaishlai</td>
+          <td>2023 - 2027</td>
+        </tr>
+        <tr>
+          <td>Intermediate</td>
+          <td>Jawahar Navodaya Vidyalaya,Vaishali</td>
+          <td>2021 - 2023</td>
+        </tr>
+		<tr>
+          <td>Matriculatio</td>
+          <td>Jawahar Navodaya Vidyalaya,Vaishali</td>
+          <td>2020 - 2021</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
+	  <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>MySQL</li>
+      </ul>
+	  
+      
+    </div>
+	
+	<div class="language" id="language">
+      <h2>Language Known</h2>
+      <ul>
+        <li>Hindi</li>
+        <li>English</li>
+        <li>Telugu</li>
+        <li>Sanskrit</li>
+      </ul>
+    </div>
+
+    <div class="Hobbies" id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+	  <li>Playing</li>
+      <li>Watching Anime,Hollywood movies</li>
+      <li>Reading Novels</li>
+      <li>Painting</li>
+	  </ul>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <a href="mailto:sonaligecv04@gmail.com"
+        >🔗 🖂</a>
+      
+      <a href="tel:+918825223204">📞 Call</a>
+      <a href="http://www.linkedin.com/in/sonali-kumari-a98953270">🔗 LİNKEDİN</a>
+	  <a href="https://github.com/kumari-sonali-0402">🔗 GitHub</a>
+      
+    </div>
+  </body>
+</html>
